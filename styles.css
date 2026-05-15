@@ -11,6 +11,7 @@
   --max-width: 840px;
   --serif: "Playfair Display", "Times New Roman", serif;
   --sans: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --ethiopic: "Noto Sans Ethiopic", var(--sans);
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
@@ -125,7 +126,7 @@ body {
 }
 
 .language-toggle {
-  font-family: "Noto Serif Ethiopic", var(--serif);
+  font-family: var(--ethiopic);
 }
 
 .theme-toggle {
@@ -263,6 +264,22 @@ main {
   color: var(--text);
 }
 
+.section-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-soft);
+  margin: 0 0 28px;
+}
+
+.section-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-soft);
+  margin: 0 0 28px;
+}
+
 .essay h2 {
   font-family: var(--serif);
   font-size: clamp(1.8rem, 2.2vw, 2.4rem);
@@ -352,8 +369,13 @@ main {
 }
 
 .lang-panel[data-lang="am"] {
-  font-family: "Noto Serif Ethiopic", var(--serif);
+  font-family: var(--ethiopic);
   letter-spacing: 0.02em;
+}
+
+.title-lang[data-lang="am"],
+.lang-swap[data-lang="am"] {
+  font-family: var(--ethiopic);
 }
 
 .lang-panel[hidden] {
