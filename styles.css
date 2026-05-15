@@ -125,7 +125,7 @@ body {
 }
 
 .language-toggle {
-  font-family: "Noto Serif Ethiopic", var(--serif);
+  font-family: "Noto Sans Ethiopic", var(--sans);
 }
 
 .theme-toggle {
@@ -352,7 +352,7 @@ main {
 }
 
 .lang-panel[data-lang="am"] {
-  font-family: "Noto Serif Ethiopic", var(--serif);
+  font-family: "Noto Sans Ethiopic", var(--sans);
   letter-spacing: 0.02em;
 }
 
