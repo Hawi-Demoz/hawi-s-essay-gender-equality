@@ -2,6 +2,8 @@ const langToggle = document.getElementById("langToggle");
 const themeToggle = document.getElementById("themeToggle");
 const progressFill = document.getElementById("progressFill");
 const panels = document.querySelectorAll(".lang-panel");
+const titleSpans = document.querySelectorAll(".title-lang");
+const heroTextSpans = document.querySelectorAll(".lang-swap");
 const fadeItems = document.querySelectorAll(".fade");
 const root = document.documentElement;
 
@@ -21,6 +23,14 @@ const toggleLanguage = () => {
   panels.forEach((panel) => {
     const isTarget = panel.getAttribute("data-lang") === (isEnglish ? "am" : "en");
     panel.hidden = !isTarget;
+  });
+  titleSpans.forEach((span) => {
+    const isTarget = span.getAttribute("data-lang") === (isEnglish ? "am" : "en");
+    span.hidden = !isTarget;
+  });
+  heroTextSpans.forEach((span) => {
+    const isTarget = span.getAttribute("data-lang") === (isEnglish ? "am" : "en");
+    span.hidden = !isTarget;
   });
   langToggle.textContent = isEnglish ? "English" : "አማርኛ";
   langToggle.setAttribute("aria-pressed", String(isEnglish));

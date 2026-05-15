@@ -214,6 +214,22 @@ main {
   margin-bottom: 24px;
 }
 
+.meta {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+}
+
+.submission {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-soft);
+  margin: 0 0 18px;
+}
+
 .author {
   font-size: 0.95rem;
   letter-spacing: 0.1em;
