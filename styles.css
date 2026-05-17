@@ -368,6 +368,113 @@ main {
   transition: opacity 0.5s ease;
 }
 
+.pdf-export {
+  font-family: var(--sans);
+  line-height: 1.65;
+  color: #111111;
+}
+
+.pdf-header {
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.pdf-title {
+  font-family: var(--serif);
+  font-size: 2.1rem;
+  line-height: 1.1;
+  margin: 0 0 12px;
+}
+
+.pdf-subtitle {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #444444;
+}
+
+.pdf-meta {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #555555;
+}
+
+.pdf-submission {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #666666;
+}
+
+.pdf-author {
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.pdf-export .section-label {
+  color: #555555;
+}
+
+.pdf-export .dropcap::first-letter {
+  float: none;
+  font-size: 1.4em;
+  line-height: 1;
+  padding: 0;
+  color: #111111;
+}
+
+.pdf-export .pdf-avoid {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+@media print {
+  .pdf-download {
+    display: none;
+  }
+}
+
+.panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.panel-head .section-label {
+  margin: 0;
+}
+
+.pdf-download {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.pdf-download:hover {
+  transform: translateY(-1px);
+}
+
+.pdf-download:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .lang-panel[data-lang="am"] {
   font-family: var(--ethiopic);
   letter-spacing: 0.02em;

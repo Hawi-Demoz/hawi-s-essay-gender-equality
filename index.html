@@ -63,7 +63,10 @@
 
     <article class="essay" aria-live="polite">
       <div class="lang-panel" data-lang="en">
-        <p class="section-label">Default : English</p>
+        <div class="panel-head">
+          <p class="section-label">Default : English</p>
+          <button class="pdf-download" type="button" data-pdf-lang="en">Download PDF</button>
+        </div>
         <p class="dropcap fade">It can be hard to explain why I chose engineering without sounding like I am reading from a brochure. The truth is much quieter. I grew up watching my mother solve problems. She is, quite simply, the most logical person I have ever known. Long before I knew what a university was, she was the one who sat me down and taught me how to think through a math problem. She did not just give me the answers; she taught me to love the moment when a complicated mess finally makes sense. My mother is not an engineer by profession, but she has the mind of one. Because of her, I never grew up thinking that being "smart" or "technical" was a trait reserved for men. In our house, it was just the standard.</p>
 
         <p class="fade">Now that I am in my fifth year at Addis Ababa University, I have realized the outside world does not always follow that same logic. Alongside my passion for engineering, I have also learned that being a woman in this field often means carrying burdens unrelated to the coursework.</p>
@@ -101,7 +104,10 @@
       </div>
 
       <div class="lang-panel" data-lang="am" hidden>
-        <p class="section-label">Amharic Translation</p>
+        <div class="panel-head">
+          <p class="section-label">Amharic Translation</p>
+          <button class="pdf-download" type="button" data-pdf-lang="am">Download PDF</button>
+        </div>
         <p class="dropcap fade">ምህንድስናን ለምን እንደመረጥኩ ማስረዳት የምወደው ነገር ነው። ያደግኩት በጥበበኛ ሴት ሲሆን እናቴ ከማውቃቸው ሰዎች ሁሉ ብልህ ናት ብል ማጋነን አይሆንብኝም። ገና በጨቅላነቴ ነበር የሂሳብ ስሌቶችን ያስተማረችኝ። አስታውሳለሁ ለመጀመሪያ ጊዜ እንጨት ሰባብራ መደመርና መቀነስን ስታስተምረኝ። እያደኩ ሰሄድም ውስብስብና የተደበላለቀ ነገር ተፈትቶ መስመር ሲይዝ የሚሰጠውን እርካታ እንድወደው አደረገችኝ። በእርሷ ምክንያት፣ "ብልህ" መሆን ወይም የቴክኒክ ነገሮችን ማወቅ ለወንዶች ብቻ የተፈቀደ ልዩ ተሰጥኦ ነው ብዬ አስቤ አላውቅም።</p>
         <p class="fade">በአዲስ አበባ ዩኒቨርሲቲ የአምስተኛ ዓመት የምህንድስና ተማሪ ነኝ። ለምህንድስና ካለኝ ፍቅር ባሻገር ፣ በዚህ ዘርፍ ውስጥ ሴት መሆን ማለት ከትምህርቱ ውጪ የሆኑ ተጨማሪ ጫናዎችን በትከሻ ላይ መሸከምንም እንደሚጨምር በተግባር ተምሬያለሁ።</p>
 
@@ -149,6 +155,8 @@
   <footer class="footer">
     <p>Equality Beyond Paper</p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" referrerpolicy="no-referrer"></script>
 
   <script src="script.js"></script>
 </body>
